@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My First Javascript Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/vue"></script>
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+<body>
+<div id="vue">
+
+<!-- Bag -->
+<div id="bag" :class='{finish : status}'>
+<!-- Health Bar -->
+</div>
+<div id="health">
+  <div :style="{width : hp + '%'}">
+  </div>
+</div>
+<!-- Controls -->
+<div id="controls">
+  <button @click='punch' v-show='!status'>Punch</button>
+  <button @click='restart'>Restart</button>
+</div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
